@@ -21,13 +21,35 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
+      text-decoration: none;
     }
     .btn-wa:hover {
       background-color: #16a085;
+      color: white;
     }
     .btn-wa img {
       width: 40px;
       height: 40px;
+    }
+    .btn-ig {
+      background-color: #e1306c;
+      color: white;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .btn-ig:hover {
+      background-color: #c9225c;
+      color: white;
+    }
+    .btn-ig img {
+      width: 32px;
+      height: 32px;
     }
     .service-list li::before {
       content: "✅ ";
@@ -43,13 +65,38 @@
       font-weight: bold;
       color: #117a65;
     }
+    .floating-wa {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: bold;
+      z-index: 9999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .floating-wa img {
+      width: 28px;
+      height: 28px;
+    }
+    .floating-wa:hover {
+      background-color: #1ebc5c;
+      color: white;
+    }
   </style>
 </head>
 <body>
 
   <div class="container py-5 text-center animate__animated animate__fadeInUp">
     <h1 class="mb-3 text-uppercase section-title">Jasa Sosmed Booster</h1>
-    <p class="lead">Boost akun sosial mediamu sekarang juga! Order followers, likes, views, dan lainnya.</p>
+    <p class="lead">Boost akun sosial mediamu sekarang juga! Dapatkan followers, likes, views, dan lainnya.</p>
     <a href="https://wa.me/6285172190182" class="btn btn-wa my-3">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
       Chat via WhatsApp
@@ -72,7 +119,7 @@
       <li>TikTok Followers, Likes, Views</li>
       <li>Facebook Page Likes</li>
       <li>YouTube Subscribers, Views, Likes</li>
-      <li>Boost Shopee Followers</li>
+      <li>Boost Shopee & Tokopedia Produk</li>
     </ul>
   </div>
 
@@ -80,12 +127,24 @@
     <h2 class="text-center section-title">Hubungi Kami</h2>
     <div class="text-center">
       <p>Langsung kirim pesan ke WhatsApp kami untuk konsultasi dan pemesanan:</p>
-      <a href="https://wa.me/6285172190182" class="btn btn-wa">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        Hubungi via WhatsApp
-      </a>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="https://wa.me/6285172190182" class="btn btn-wa">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+          Hubungi via WhatsApp
+        </a>
+        <a href="https://www.instagram.com/mysosmed.co.id/" target="_blank" class="btn btn-ig">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+          Lihat Instagram
+        </a>
+      </div>
     </div>
   </div>
+
+  <!-- Tombol Floating WhatsApp -->
+  <a href="https://wa.me/6285172190182" class="floating-wa animate__animated animate__bounceInUp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+    Hubungi Sekarang
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
