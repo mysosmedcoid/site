@@ -1,144 +1,233 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nura Digistore | Sosmed Booster</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/preview-removebg-preview.png" type="image/svg+xml">
   <style>
     body {
-      background: #e0f7f4;
       font-family: 'Segoe UI', sans-serif;
+      color: aliceblue;
     }
+
     .btn-wa {
       background-color: #1abc9c;
       color: white;
       font-size: 1.2rem;
       padding: 1rem 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: inline-flex;
       align-items: center;
       gap: 10px;
       text-decoration: none;
     }
+
     .btn-wa:hover {
       background-color: #16a085;
       color: white;
     }
+
     .btn-wa img {
       width: 40px;
       height: 40px;
     }
+
     .btn-tiktok {
-      background-color: #9c9a9b;
+      background-color: #3a3a3a;
       color: white;
       font-size: 1.2rem;
       padding: 1rem 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: inline-flex;
       align-items: center;
       gap: 10px;
       text-decoration: none;
     }
+
+    .btn-tiktok:hover {
+      background-color: #000000;
+      color: white;
+    }
+
+    .btn-tiktok img {
+      width: 32px;
+      height: 32px;
+    }
+
     .btn-ig {
       background-color: #e1306c;
       color: white;
       font-size: 1.2rem;
       padding: 1rem 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: inline-flex;
       align-items: center;
       gap: 10px;
       text-decoration: none;
     }
+
     .btn-ig:hover {
       background-color: #c9225c;
       color: white;
     }
+
     .btn-ig img {
       width: 32px;
       height: 32px;
     }
+
     .service-list li::before {
       content: "✅ ";
     }
+
     .img-grid img {
       border-radius: 12px;
       transition: transform 0.3s ease;
     }
+
     .img-grid img:hover {
       transform: scale(1.05);
     }
+
     .section-title {
       font-weight: bold;
-      color: #117a65;
+      color: #00ffcc;
     }
+
     .floating-wa {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25D366;
+      background-color: #00a83e;
       color: white;
       padding: 0.8rem 1.2rem;
       border-radius: 50px;
       font-size: 1rem;
       font-weight: bold;
       z-index: 9999;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       display: flex;
       align-items: center;
       gap: 10px;
       text-decoration: none;
     }
+
     .floating-wa img {
       width: 28px;
       height: 28px;
     }
+
     .floating-wa:hover {
       background-color: #1ebc5c;
       color: white;
     }
   </style>
 </head>
-<body>
+
+<body id="bgvantanet">
 
   <div class="container py-5 text-center animate__animated animate__fadeInUp">
     <div class="row img-grid">
-      <div class="col-12 mb-3"><img src="assets/images/preview-removebg-preview.png" class="img-fluid w-100 p-5" alt="logo"></div>
+      <div class="col-12 mb-3"><img src="assets/images/preview-removebg-preview.png" class="img-fluid" width="300rem"
+          alt="logo">
+      </div>
     </div>
     <h1 class="mb-3 text-uppercase section-title">WELCOME TO NURA DIGISTORE</h1>
     <p class="lead">Boost akun sosial mediamu sekarang juga! Dapatkan followers, likes, views, dan lainnya.</p>
-    <a href="https://wa.me/6285172190182" class="btn btn-wa my-3">
+    <a href="https://wa.me/6285172190182" class="btn btn-wa mT-3">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-      Chat via WhatsApp
+      Order via WhatsApp
     </a>
   </div>
 
-  <div class="container pb-4 animate__animated animate__fadeInUp">
-    <div class="row img-grid">
-      <div class="col-12 col-md-3 mb-3"><img src="assets/images/newpl mysosmed (1).png" class="img-fluid w-100" alt="Gambar 1"></div>
-      <div class="col-12 col-md-3 mb-3"><img src="assets/images/newpl mysosmed (2).png" class="img-fluid w-100" alt="Gambar 2"></div>
-      <div class="col-12 col-md-3 mb-3"><img src="assets/images/newpl mysosmed (3).png" class="img-fluid w-100" alt="Gambar 3"></div>
-      <div class="col-12 col-md-3 mb-3"><img src="assets/images/newpl mysosmed (4).png" class="img-fluid w-100" alt="Gambar 4"></div>
-      <div class="col-12 col-md-3 mb-3"><img src="assets/images/newpl mysosmed (5).png" class="img-fluid w-100" alt="Gambar 4"></div>
-    </div>
-  </div>
-
-  <div class="container py-4 animate__animated animate__fadeInUp">
+  <div class="container mb-5 animate__animated animate__fadeInUp">
     <h2 class="text-center section-title">Layanan Tersedia</h2>
     <ul class="service-list list-unstyled mt-3 text-center">
       <li>Instagram Followers, Likes, Views, Komen</li>
-      <li>TikTok Followers, Likes, Views<, Komen/li>
+      <li>TikTok Followers, Likes, Views, Komen</li>
       <li>YouTube Subscribers, Views, Likes, komen</li>
       <li>Facebook Foll, Likes, Views, Komen</li>
       <li>Akun Netflix, Spotify Premium, Capcut Pro, Canva Preemium</li>
       <li>Boost SnackVideo Foll, Shopee Foll, dll</li>
     </ul>
   </div>
+
+  <div class="container pb-4 animate__animated animate__fadeInUp">
+    <div class="row img-grid">
+      <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl mysosmed (1).png" class="img-fluid w-100"
+          alt="Gambar 1"></div>
+      <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl mysosmed (2).png" class="img-fluid w-100"
+          alt="Gambar 2"></div>
+      <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl mysosmed (3).png" class="img-fluid w-100"
+          alt="Gambar 3"></div>
+      <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl mysosmed (4).png" class="img-fluid w-100"
+          alt="Gambar 4"></div>
+      <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl mysosmed (5).png" class="img-fluid w-100"
+          alt="Gambar 4"></div>
+    </div>
+  </div>
+
+
+
+  <!-- 7. Galeri testimoni-->
+  <section class="py-5" data-aos="zoom-in">
+    <div class="container">
+      <h2 class="text-center section-title">Riwayat Transaksi & Testimoni</h2>
+      <div class="gallery-slider d-flex overflow-auto gap-3 py-5">
+        <img src="assets/images/testi (1).jpeg" alt="Galeri 1" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (2).jpeg" alt="Galeri 2" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (3).jpeg" alt="Galeri 3" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (4).jpeg" alt="Galeri 4" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (5).jpeg" alt="Galeri 5" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (6).jpeg" alt="Galeri 6" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (7).jpeg" alt="Galeri 7" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (8).jpeg" alt="Galeri 8" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (9).jpeg" alt="Galeri 9" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (10).jpeg" alt="Galeri 10" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (11).jpeg" alt="Galeri 11" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (12).jpeg" alt="Galeri 12" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (13).jpeg" alt="Galeri 13" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (14).jpeg" alt="Galeri 14" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (15).jpeg" alt="Galeri 15" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (16).jpeg" alt="Galeri 16" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+        <img src="assets/images/testi (17).jpeg" alt="Galeri 17" class="img-fluid rounded gallery-img"
+          style="height:35rem; cursor:zoom-in">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Bootstrap -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <img id="modalImage" src="" class="img-fluid rounded" alt="Zoomed Image">
+      </div>
+    </div>
+  </div>
+
 
   <div class="container py-4 animate__animated animate__fadeInUp">
     <h2 class="text-center section-title">Hubungi Kami</h2>
@@ -147,21 +236,23 @@
       <div class="d-flex justify-content-center flex-wrap gap-3">
         <a href="https://wa.me/6285172190182" class="btn btn-wa">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-          Hubungi via WhatsApp
+          Order By WhatsApp
         </a>
         <a href="https://www.instagram.com/mysosmed.co.id/" target="_blank" class="btn btn-ig">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
           Lihat Instagram
         </a>
         <a href="https://www.tiktok.com/@nura.digistore" target="_blank" class="btn btn-tiktok">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/640px-Tiktok_icon.svg.png" alt="tiktok">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/640px-Tiktok_icon.svg.png"
+            alt="tiktok">
           Lihat Tiktok
         </a>
       </div>
     </div>
   </div>
   <br>
-    <br>  <br>  <br>  <br>  <br>  <br> 
+  <br> <br> <br> <br> <br> <br>
+
 
   <!-- Tombol Floating WhatsApp -->
   <a href="https://wa.me/6285172190182" class="floating-wa animate__animated animate__bounceInUp">
@@ -170,5 +261,48 @@
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#bgvantanet",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3fffdd,
+      points: 20.00,
+      maxDistance: 14.00,
+      spacing: 16.00
+    })
+  </script>
+
+  <!-- Script modal -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll(".gallery-img");
+      const modalImage = document.getElementById("modalImage");
+      const imageModalElement = document.getElementById("imageModal");
+      const imageModal = new bootstrap.Modal(imageModalElement);
+
+      // Klik gambar di galeri → tampilkan modal
+      images.forEach(img => {
+        img.addEventListener("click", function () {
+          modalImage.src = this.src;
+          modalImage.alt = this.alt;
+          imageModal.show();
+        });
+      });
+
+      // Klik gambar di dalam modal → tutup modal
+      modalImage.addEventListener("click", function () {
+        imageModal.hide();
+      });
+    });
+  </script>
 </body>
+
 </html>
