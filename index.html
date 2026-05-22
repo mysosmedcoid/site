@@ -887,19 +887,19 @@
         const item = platform.layanan[jenis][idx];
 
         const tglNow = new Date().toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' });
-        let pesan = `╔══════════════════════╗\n`;
+        let pesan = `═══════════════════\n`;
         pesan += `   🛒 *FORM PEMESANAN*\n`;
         pesan += `   *Nura Digistore*\n`;
         pesan += `   mysosmedcoid.github.io/site\n`;
-        pesan += `╚══════════════════════╝\n\n`;
+        pesan += `═══════════════════\n\n`;
         pesan += `📅 *Tanggal:* ${tglNow}\n`;
-        pesan += `━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+        pesan += `━━━━━━━━━━━━━━━━━━━━\n`;
         pesan += `${platform.emoji} *Platform:* ${platform.nama}\n`;
         pesan += `📦 *Layanan:* ${jenis}\n`;
         pesan += `🔢 *Jumlah:* ${item.jumlah}\n`;
         pesan += `💰 *Harga:* ${item.harga}\n`;
         if (link) pesan += `🔗 *Link Target:* ${link}\n`;
-        pesan += `━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+        pesan += `━━━━━━━━━━━━━━━━━━━━\n\n`;
         pesan += `Mohon diproses, terimakasih! 🙏`;
 
         const url = `https://wa.me/6285172190182?text=${encodeURIComponent(pesan)}`;
