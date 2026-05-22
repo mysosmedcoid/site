@@ -887,11 +887,11 @@
         const item = platform.layanan[jenis][idx];
 
         const tglNow = new Date().toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' });
-        let pesan = `═══════════════════\n`;
+        let pesan = `╔═════════════════╗\n`;
         pesan += `   🛒 *FORM PEMESANAN*\n`;
         pesan += `   *Nura Digistore*\n`;
         pesan += `   mysosmedcoid.github.io/site\n`;
-        pesan += `═══════════════════\n\n`;
+        pesan += `╚═════════════════╝\n\n`;
         pesan += `📅 *Tanggal:* ${tglNow}\n`;
         pesan += `━━━━━━━━━━━━━━━━━━━━\n`;
         pesan += `${platform.emoji} *Platform:* ${platform.nama}\n`;
