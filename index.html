@@ -12,9 +12,7 @@
       body {
         font-family: 'Segoe UI', sans-serif;
         color: aliceblue;
-        /* background: #102424; */
-        /* background-color: #286fa9; */
-        background-image: radial-gradient(circle at 46% 40%, rgba(228, 228, 228, 0.06) 0%, rgba(228, 228, 228, 0.06) 13%, transparent 13%, transparent 100%), radial-gradient(circle at 11% 41%, rgba(198, 198, 198, 0.06) 0%, rgba(198, 198, 198, 0.06) 19%, transparent 19%, transparent 100%), radial-gradient(circle at 52% 23%, rgba(14, 14, 14, 0.06) 0%, rgba(14, 14, 14, 0.06) 69%, transparent 69%, transparent 100%), radial-gradient(circle at 13% 85%, rgba(148, 148, 148, 0.06) 0%, rgba(148, 148, 148, 0.06) 44%, transparent 44%, transparent 100%), radial-gradient(circle at 57% 74%, rgba(232, 232, 232, 0.06) 0%, rgba(232, 232, 232, 0.06) 21%, transparent 21%, transparent 100%), radial-gradient(circle at 59% 54%, rgba(39, 39, 39, 0.06) 0%, rgba(39, 39, 39, 0.06) 49%, transparent 49%, transparent 100%), radial-gradient(circle at 98% 38%, rgba(157, 157, 157, 0.06) 0%, rgba(157, 157, 157, 0.06) 24%, transparent 24%, transparent 100%), radial-gradient(circle at 8% 6%, rgba(60, 60, 60, 0.06) 0%, rgba(60, 60, 60, 0.06) 12%, transparent 12%, transparent 100%), linear-gradient(90deg, #2d4849, #213338);
+        background-image: radial-gradient(circle at 46% 40%, rgba(228, 228, 228, .06) 0%, rgba(228, 228, 228, .06) 13%, transparent 13%, transparent 100%), radial-gradient(circle at 11% 41%, rgba(198, 198, 198, .06) 0%, rgba(198, 198, 198, .06) 19%, transparent 19%, transparent 100%), radial-gradient(circle at 52% 23%, rgba(14, 14, 14, .06) 0%, rgba(14, 14, 14, .06) 69%, transparent 69%, transparent 100%), radial-gradient(circle at 13% 85%, rgba(148, 148, 148, .06) 0%, rgba(148, 148, 148, .06) 44%, transparent 44%, transparent 100%), radial-gradient(circle at 57% 74%, rgba(232, 232, 232, .06) 0%, rgba(232, 232, 232, .06) 21%, transparent 21%, transparent 100%), radial-gradient(circle at 59% 54%, rgba(39, 39, 39, .06) 0%, rgba(39, 39, 39, .06) 49%, transparent 49%, transparent 100%), radial-gradient(circle at 98% 38%, rgba(157, 157, 157, .06) 0%, rgba(157, 157, 157, .06) 24%, transparent 24%, transparent 100%), radial-gradient(circle at 8% 6%, rgba(60, 60, 60, .06) 0%, rgba(60, 60, 60, .06) 12%, transparent 12%, transparent 100%), linear-gradient(90deg, #2d4849, #213338);
       }
 
       .btn-wa {
@@ -23,7 +21,7 @@
         font-size: 1.2rem;
         padding: 1rem 2rem;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
         display: inline-flex;
         align-items: center;
         gap: 10px;
@@ -46,7 +44,7 @@
         font-size: 1.2rem;
         padding: 1rem 2rem;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
         display: inline-flex;
         align-items: center;
         gap: 10px;
@@ -54,7 +52,7 @@
       }
 
       .btn-tiktok:hover {
-        background-color: #000000;
+        background-color: #000;
         color: white;
       }
 
@@ -69,7 +67,7 @@
         font-size: 1.2rem;
         padding: 1rem 2rem;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
         display: inline-flex;
         align-items: center;
         gap: 10px;
@@ -84,10 +82,6 @@
       .btn-ig img {
         width: 32px;
         height: 32px;
-      }
-
-      .service-list li::before {
-        content: "✅ ";
       }
 
       .img-grid img {
@@ -115,7 +109,7 @@
         font-size: 1rem;
         font-weight: bold;
         z-index: 9999;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
         display: flex;
         align-items: center;
         gap: 10px;
@@ -132,7 +126,156 @@
         color: white;
       }
 
-      /*  ------------- 📱 Mobile (≤ 767px)  ------------- */
+      /* ---- Product Card ---- */
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .product-card img {
+        border-radius: 14px;
+        width: 100%;
+      }
+
+      .btn-beli {
+        display: block;
+        width: 100%;
+        background: linear-gradient(135deg, #00ffcc, #00c49a);
+        color: white;
+        font-weight: 900;
+        font-size: 1.5rem;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 0 0 14px 14px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        letter-spacing: 0.5px;
+        -webkit-text-stroke: 0.4rem black;
+        paint-order: stroke fill;
+      }
+
+      .btn-beli:hover {
+        background: linear-gradient(135deg, #00e0b3, #00a882);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+      }
+
+
+      /* ---- Order Modal ---- */
+      #orderModal .modal-content {
+        background: linear-gradient(160deg, #1e3535, #192b2b);
+        border: 1px solid rgba(0, 255, 204, 0.2);
+        border-radius: 18px;
+        color: #e0f7f4;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      #orderModal .modal-header {
+        border-bottom: 1px solid rgba(0, 255, 204, 0.15);
+        padding: 1.2rem 1.5rem;
+      }
+
+      #orderModal .modal-title {
+        color: #00ffcc;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+
+      #orderModal .btn-close {
+        filter: invert(1) brightness(2);
+      }
+
+      #orderModal .modal-body {
+        padding: 1.5rem;
+      }
+
+      #orderModal .modal-footer {
+        border-top: 1px solid rgba(0, 255, 204, 0.15);
+        padding: 1rem 1.5rem;
+      }
+
+      #orderModal label {
+        font-size: 0.85rem;
+        color: #a0ccc8;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+      }
+
+      #orderModal select,
+      #orderModal input {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(0, 255, 204, 0.2);
+        color: #e0f7f4;
+        border-radius: 10px;
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+        transition: border-color 0.2s;
+      }
+
+      #orderModal select:focus,
+      #orderModal input:focus {
+        border-color: #00ffcc;
+        background: rgba(0, 255, 204, 0.06);
+        color: #e0f7f4;
+        box-shadow: 0 0 0 3px rgba(0, 255, 204, 0.12);
+        outline: none;
+      }
+
+      #orderModal select option {
+        background: #1e3535;
+        color: #e0f7f4;
+      }
+
+      /* Harga badge */
+      #hargaInfo {
+        background: rgba(0, 255, 204, 0.1);
+        border: 1px solid rgba(0, 255, 204, 0.3);
+        border-radius: 10px;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #00ffcc;
+        display: none;
+        text-align: center;
+        margin-top: 6px;
+      }
+
+      #hargaInfo.show {
+        display: block;
+      }
+
+      .btn-kirim-wa {
+        background: linear-gradient(135deg, #25d366, #1da851);
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .btn-kirim-wa:hover {
+        background: linear-gradient(135deg, #1ebd59, #179144);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+      }
+
+      .btn-kirim-wa img {
+        width: 22px;
+        height: 22px;
+      }
+
       @media (max-width: 767px) {
         .header-top {
           text-align: center;
@@ -147,8 +290,6 @@
   </head>
 
   <body>
-    <!-- <section id="bgvantanet"> </section> -->
-
 
     <div class="container py-5 text-center animate__animated animate__fadeInUp">
       <div class="row img-grid">
@@ -157,53 +298,74 @@
         </div>
         <div class="col-12 col-lg-8 mb-3 header-top">
           <h2 class="mb-3 text-uppercase section-title">Masih bingung biar sosmed-mu rame?</h2>
-          <p class="text-white py-3">
+          <h4 class="text-white py-3">
             Di Nura Digistore, semuanya bisa! Mulai dari jasa sosmed booster untuk followers, likes, dan views hingga
             berbagai layanan digital lain seperti langganan canva, netflix, spotify, capcut dan lainnya. Kami siap bantu
-            kebutuhan digital kamu. Cepat, aman, dan hasilnya nyata!! 🚀 </p>
-          <a href="https://wa.me/6285172190182?text=Saya%20tertarik%20dengan%20layanan%20Nura%20Digistore%20(mysosmed.co.id),%20tolong%20info%20lengkapnya%20terimakasih!"
-            target="_blank" class="btn btn-wa mT-3">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-            Order via WhatsApp
-          </a>
+            kebutuhan digital kamu. Cepat, aman, dan hasilnya nyata!! 🚀
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="container pb-4 animate__animated animate__fadeInUp">
+      <div class="row img-grid">
+
+        <!-- Instagram -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="product-card">
+            <button class="btn-beli" onclick="bukaModal('instagram')">
+              <img src="assets/images/newpl-instagram.png" class="img-fluid w-100" alt="Instagram Services">
+              <br><span>🛒 BELI SEKARANG</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- TikTok -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="product-card">
+            <button class="btn-beli" onclick="bukaModal('tiktok')">
+              <img src="assets/images/newpl-tiktok.png" class="img-fluid w-100" alt="TikTok Services">
+              <br><span>🛒 BELI SEKARANG</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- YouTube -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="product-card">
+            <button class="btn-beli" onclick="bukaModal('youtube')">
+              <img src="assets/images/newpl mysosmed (3).png" class="img-fluid w-100" alt="YouTube Services">
+              <br><span>🛒 BELI SEKARANG</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Facebook -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="product-card">
+            <button class="btn-beli" onclick="bukaModal('facebook')">
+              <img src="assets/images/newpl mysosmed (4).png" class="img-fluid w-100" alt="Facebook Services">
+              <br><span>🛒 BELI SEKARANG</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Others -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="product-card">
+            <button class="btn-beli" onclick="bukaModal('others')">
+              <img src="assets/images/newpl mysosmed (5).png" class="img-fluid w-100" alt="Other Services">
+              <br><span>🛒 BELI SEKARANG</span>
+            </button>
+          </div>
         </div>
 
       </div>
-
-
     </div>
 
-    <!--   <div class="container mb-5 animate__animated animate__fadeInUp">
-    <h2 class="text-center section-title">Layanan Tersedia</h2>
-    <ul class="service-list list-unstyled mt-3 text-center">
-      <li>Instagram Followers, Likes, Views, Komen</li>
-      <li>TikTok Followers, Likes, Views, Komen</li>
-      <li>YouTube Subscribers, Views, Likes, komen</li>
-      <li>Facebook Foll, Likes, Views, Komen</li>
-      <li>Akun Netflix, Spotify Premium, Capcut Pro, Canva Preemium</li>
-      <li>Boost SnackVideo Foll, Shopee Foll, dll</li>
-    </ul>
-  </div> -->
-
-    <div class="container pb-4 animate__animated animate__fadeInUp">
-      <div class="row img-grid">
-        <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl-instagram.png" class="img-fluid w-100"
-            alt="Gambar 1"></div>
-        <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl-tiktok.png" class="img-fluid w-100"
-            alt="Gambar 2"></div>
-        <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl mysosmed (3).png" class="img-fluid w-100"
-            alt="Gambar 3"></div>
-        <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl mysosmed (4).png" class="img-fluid w-100"
-            alt="Gambar 4"></div>
-        <div class="col-12 col-md-4 mb-3"><img src="assets/images/newpl mysosmed (5).png" class="img-fluid w-100"
-            alt="Gambar 4"></div>
-      </div>
-    </div>
-
-
-
-    <!-- 7. Galeri testimoni-->
-    <section class="py-5" data-aos="zoom-in">
+    <!-- Galeri Testimoni -->
+    <section class="py-5">
       <div class="container">
         <h2 class="text-center section-title">Riwayat Transaksi & Testimoni</h2>
         <div class="gallery-slider d-flex overflow-auto gap-3 py-5">
@@ -259,7 +421,7 @@
       </div>
     </section>
 
-    <!-- Modal Bootstrap -->
+    <!-- Modal Zoom Gambar -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-transparent border-0">
@@ -268,7 +430,7 @@
       </div>
     </div>
 
-
+    <!-- Hubungi Kami -->
     <div class="container py-4 animate__animated animate__fadeInUp">
       <h2 class="text-center section-title">Hubungi Kami</h2>
       <div class="text-center">
@@ -277,44 +439,482 @@
           <a href="https://wa.me/6285172190182?text=Saya%20tertarik%20dengan%20layanan%20Nura%20Digistore%20(mysosmed.co.id),%20tolong%20info%20lengkapnya%20terimakasih!"
             target="_blank" class="btn btn-wa">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-            Order By WhatsApp
+            Chat WhatsApp
           </a>
           <a href="https://www.instagram.com/mysosmed.co.id/" target="_blank" class="btn btn-ig">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
             Kunjungi Instagram
           </a>
           <a href="https://www.tiktok.com/@nura.digistore" target="_blank" class="btn btn-tiktok">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/640px-Tiktok_icon.svg.png"
-              alt="tiktok">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z" />
+            </svg>
             Kunjungi Tiktok
           </a>
         </div>
       </div>
     </div>
-    <br>
-    <br> <br> <br> <br> <br> <br>
+    <br><br><br><br><br><br><br>
 
-
-    <!-- Tombol Floating WhatsApp -->
+    <!-- Floating WA -->
     <a href="https://wa.me/6285172190182?text=Saya%20tertarik%20dengan%20layanan%20Nura%20Digistore%20(mysosmed.co.id),%20tolong%20info%20lengkapnya%20terimakasih!"
       target="_blank" class="floating-wa animate__animated animate__bounceInUp">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
-      Hubungi Sekarang
+      Konsultasi Sekarang
     </a>
+
+    <!-- ===================== ORDER MODAL ===================== -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderModalTitle">Form Pemesanan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Pilih Layanan -->
+            <div class="mb-3">
+              <label for="selectLayanan">Pilih Layanan</label>
+              <select class="form-select" id="selectLayanan" onchange="updateJumlah()">
+                <option value="">-- Pilih Layanan --</option>
+              </select>
+            </div>
+
+            <!-- Pilih Jumlah -->
+            <div class="mb-3">
+              <label for="selectJumlah">Pilih Jumlah</label>
+              <select class="form-select" id="selectJumlah" onchange="updateHarga()" disabled>
+                <option value="">-- Pilih Jumlah --</option>
+              </select>
+            </div>
+
+            <!-- Info Harga -->
+            <div id="hargaInfo">💰 Harga: <span id="hargaText">-</span></div>
+
+            <!-- Link Target -->
+            <div class="mb-3 mt-3">
+              <label for="inputLink">Link / URL Target</label>
+              <input type="text" class="form-control" id="inputLink"
+                placeholder="Contoh: https://instagram.com/username">
+              <small class="text-muted" style="color:#7fb5b0 !important;">Masukkan link akun atau postingan yang ingin
+                di-boost</small>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn-kirim-wa" onclick="kirimWA()">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+              Pesan via WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======================================================= -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <!-- Script modal -->
     <script>
+      // ============================================================
+      // DATA LAYANAN PER PLATFORM
+      // Struktur: layanan (jenis) → jumlah → { label, harga }
+      // ============================================================
+      const dataLayanan = {
+        instagram: {
+          nama: "Instagram Services", emoji: "📸",
+          layanan: {
+            "Followers Instagram": [
+              { jumlah: "100 Followers", harga: "Rp 6.000" },
+              { jumlah: "200 Followers", harga: "Rp 12.000" },
+              { jumlah: "500 Followers", harga: "Rp 30.000" },
+              { jumlah: "800 Followers", harga: "Rp 48.000" },
+              { jumlah: "1.000 Followers", harga: "Rp 60.000" },
+              { jumlah: "1.500 Followers", harga: "Rp 90.000" },
+              { jumlah: "2.000 Followers", harga: "Rp 120.000" },
+              { jumlah: "3.000 Followers", harga: "Rp 180.000" },
+              { jumlah: "4.000 Followers", harga: "Rp 240.000" },
+              { jumlah: "5.000 Followers", harga: "Rp 300.000" },
+              { jumlah: "6.000 Followers", harga: "Rp 360.000" },
+              { jumlah: "7.000 Followers", harga: "Rp 420.000" },
+              { jumlah: "8.000 Followers", harga: "Rp 480.000" },
+              { jumlah: "9.000 Followers", harga: "Rp 540.000" },
+              { jumlah: "10.000 Followers", harga: "Rp 600.000" },
+            ],
+            "Likes Post": [
+              { jumlah: "500 Likes", harga: "Rp 8.000" },
+              { jumlah: "1.000 Likes", harga: "Rp 16.000" },
+              { jumlah: "1.500 Likes", harga: "Rp 24.000" },
+              { jumlah: "2.000 Likes", harga: "Rp 32.000" },
+              { jumlah: "2.500 Likes", harga: "Rp 40.000" },
+              { jumlah: "3.000 Likes", harga: "Rp 48.000" },
+              { jumlah: "4.000 Likes", harga: "Rp 64.000" },
+              { jumlah: "5.000 Likes", harga: "Rp 80.000" },
+              { jumlah: "6.000 Likes", harga: "Rp 96.000" },
+              { jumlah: "7.000 Likes", harga: "Rp 112.000" },
+              { jumlah: "8.000 Likes", harga: "Rp 128.000" },
+              { jumlah: "9.000 Likes", harga: "Rp 144.000" },
+              { jumlah: "10.000 Likes", harga: "Rp 160.000" },
+            ],
+            "Views Reels": [
+              { jumlah: "500 Views", harga: "Rp 5.000" },
+              { jumlah: "1.000 Views", harga: "Rp 10.000" },
+              { jumlah: "1.500 Views", harga: "Rp 15.000" },
+              { jumlah: "2.000 Views", harga: "Rp 20.000" },
+              { jumlah: "2.500 Views", harga: "Rp 25.000" },
+              { jumlah: "3.000 Views", harga: "Rp 30.000" },
+              { jumlah: "4.000 Views", harga: "Rp 40.000" },
+              { jumlah: "5.000 Views", harga: "Rp 50.000" },
+              { jumlah: "6.000 Views", harga: "Rp 60.000" },
+              { jumlah: "7.000 Views", harga: "Rp 70.000" },
+              { jumlah: "8.000 Views", harga: "Rp 80.000" },
+              { jumlah: "9.000 Views", harga: "Rp 90.000" },
+              { jumlah: "10.000 Views", harga: "Rp 100.000" },
+            ],
+            "Komen Post": [
+              { jumlah: "10 Komen", harga: "Rp 5.000" },
+              { jumlah: "20 Komen", harga: "Rp 10.000" },
+              { jumlah: "30 Komen", harga: "Rp 15.000" },
+              { jumlah: "40 Komen", harga: "Rp 20.000" },
+              { jumlah: "50 Komen", harga: "Rp 25.000" },
+            ],
+          }
+        },
+        tiktok: {
+          nama: "TikTok Services", emoji: "🎵",
+          layanan: {
+            "Followers TikTok": [
+              { jumlah: "100 Followers", harga: "Rp 7.000" },
+              { jumlah: "200 Followers", harga: "Rp 14.000" },
+              { jumlah: "500 Followers", harga: "Rp 35.000" },
+              { jumlah: "800 Followers", harga: "Rp 56.000" },
+              { jumlah: "1.000 Followers", harga: "Rp 70.000" },
+              { jumlah: "1.500 Followers", harga: "Rp 105.000" },
+              { jumlah: "2.000 Followers", harga: "Rp 140.000" },
+              { jumlah: "3.000 Followers", harga: "Rp 210.000" },
+              { jumlah: "4.000 Followers", harga: "Rp 280.000" },
+              { jumlah: "5.000 Followers", harga: "Rp 350.000" },
+              { jumlah: "6.000 Followers", harga: "Rp 420.000" },
+              { jumlah: "7.000 Followers", harga: "Rp 490.000" },
+              { jumlah: "8.000 Followers", harga: "Rp 560.000" },
+              { jumlah: "9.000 Followers", harga: "Rp 630.000" },
+              { jumlah: "10.000 Followers", harga: "Rp 700.000" },
+            ],
+            "Likes + Views Video": [
+              { jumlah: "500", harga: "Rp 8.000" },
+              { jumlah: "1.000", harga: "Rp 15.000" },
+              { jumlah: "1.500", harga: "Rp 23.000" },
+              { jumlah: "2.000", harga: "Rp 30.000" },
+              { jumlah: "2.500", harga: "Rp 38.000" },
+              { jumlah: "3.000", harga: "Rp 46.000" },
+              { jumlah: "4.000", harga: "Rp 61.000" },
+              { jumlah: "5.000", harga: "Rp 76.000" },
+              { jumlah: "6.000", harga: "Rp 91.000" },
+              { jumlah: "7.000", harga: "Rp 106.000" },
+              { jumlah: "8.000", harga: "Rp 121.000" },
+              { jumlah: "9.000", harga: "Rp 136.000" },
+              { jumlah: "10.000", harga: "Rp 152.000" },
+            ],
+            "Views Only": [
+              { jumlah: "500 Views", harga: "Rp 5.000" },
+              { jumlah: "1.000 Views", harga: "Rp 10.000" },
+              { jumlah: "1.500 Views", harga: "Rp 15.000" },
+              { jumlah: "2.000 Views", harga: "Rp 20.000" },
+              { jumlah: "2.500 Views", harga: "Rp 25.000" },
+              { jumlah: "3.000 Views", harga: "Rp 30.000" },
+              { jumlah: "4.000 Views", harga: "Rp 40.000" },
+              { jumlah: "5.000 Views", harga: "Rp 50.000" },
+              { jumlah: "6.000 Views", harga: "Rp 60.000" },
+              { jumlah: "7.000 Views", harga: "Rp 70.000" },
+              { jumlah: "8.000 Views", harga: "Rp 80.000" },
+              { jumlah: "9.000 Views", harga: "Rp 90.000" },
+              { jumlah: "10.000 Views", harga: "Rp 100.000" },
+            ],
+            "Komen Video": [
+              { jumlah: "15 Komen", harga: "Rp 10.000" },
+              { jumlah: "30 Komen", harga: "Rp 20.000" },
+              { jumlah: "50 Komen", harga: "Rp 34.000" },
+              { jumlah: "70 Komen", harga: "Rp 47.000" },
+              { jumlah: "90 Komen", harga: "Rp 60.000" },
+            ],
+          }
+        },
+        youtube: {
+          nama: "YouTube Services", emoji: "▶️",
+          layanan: {
+            "Subscribers": [
+              { jumlah: "100 Subscribers", harga: "Rp 30.000" },
+              { jumlah: "200 Subscribers", harga: "Rp 60.000" },
+              { jumlah: "500 Subscribers", harga: "Rp 150.000" },
+              { jumlah: "800 Subscribers", harga: "Rp 240.000" },
+              { jumlah: "1000 Subscribers", harga: "Rp 300.000" },
+            ],
+            "Likes Video": [
+              { jumlah: "200 Likes", harga: "Rp 6.000" },
+              { jumlah: "500 Likes", harga: "Rp 15.000" },
+              { jumlah: "800 Likes", harga: "Rp 24.000" },
+              { jumlah: "1.000 Likes", harga: "Rp 30.000" },
+              { jumlah: "1.500 Likes", harga: "Rp 45.000" },
+              { jumlah: "2.000 Likes", harga: "Rp 60.000" },
+              { jumlah: "3.000 Likes", harga: "Rp 90.000" },
+              { jumlah: "4.000 Likes", harga: "Rp 120.000" },
+              { jumlah: "5.000 Likes", harga: "Rp 150.000" },
+              { jumlah: "6.000 Likes", harga: "Rp 180.000" },
+              { jumlah: "7.000 Likes", harga: "Rp 210.000" },
+              { jumlah: "8.000 Likes", harga: "Rp 240.000" },
+              { jumlah: "9.000 Likes", harga: "Rp 270.000" },
+              { jumlah: "10.000 Likes", harga: "Rp 300.000" },
+            ],
+            "Views Video": [
+              { jumlah: "250 Views", harga: "Rp 9.000" },
+              { jumlah: "500 Views", harga: "Rp 18.000" },
+              { jumlah: "750 Views", harga: "Rp 27.000" },
+              { jumlah: "1.000 Views", harga: "Rp 35.000" },
+              { jumlah: "1.500 Views", harga: "Rp 53.000" },
+              { jumlah: "2.000 Views", harga: "Rp 70.000" },
+              { jumlah: "3.000 Views", harga: "Rp 105.000" },
+              { jumlah: "4.000 Views", harga: "Rp 140.000" },
+              { jumlah: "5.000 Views", harga: "Rp 175.000" },
+              { jumlah: "6.000 Views", harga: "Rp 210.000" },
+              { jumlah: "7.000 Views", harga: "Rp 245.000" },
+              { jumlah: "8.000 Views", harga: "Rp 280.000" },
+              { jumlah: "9.000 Views", harga: "Rp 315.000" },
+              { jumlah: "10.000 Views", harga: "Rp 350.000" },
+            ],
+            "Komen Video": [
+              { jumlah: "10 Komen", harga: "Rp 10.000" },
+              { jumlah: "20 Komen", harga: "Rp 20.000" },
+              { jumlah: "30 Komen", harga: "Rp 30.000" },
+              { jumlah: "40 Komen", harga: "Rp 40.000" },
+              { jumlah: "50 Komen", harga: "Rp 50.000" },
+            ],
+          }
+        },
+        facebook: {
+          nama: "Facebook Services", emoji: "👥",
+          layanan: {
+            "Followers Facebook": [
+              { jumlah: "200 Followers", harga: "Rp 6.000" },
+              { jumlah: "500 Followers", harga: "Rp 15.000" },
+              { jumlah: "800 Followers", harga: "Rp 24.000" },
+              { jumlah: "1.000 Followers", harga: "Rp 30.000" },
+              { jumlah: "1.500 Followers", harga: "Rp 45.000" },
+              { jumlah: "2.000 Followers", harga: "Rp 60.000" },
+              { jumlah: "3.000 Followers", harga: "Rp 90.000" },
+              { jumlah: "4.000 Followers", harga: "Rp 120.000" },
+              { jumlah: "5.000 Followers", harga: "Rp 150.000" },
+              { jumlah: "6.000 Followers", harga: "Rp 180.000" },
+              { jumlah: "7.000 Followers", harga: "Rp 210.000" },
+              { jumlah: "8.000 Followers", harga: "Rp 240.000" },
+              { jumlah: "9.000 Followers", harga: "Rp 270.000" },
+              { jumlah: "10.000 Followers", harga: "Rp 300.000" },
+            ],
+            "Likes Post": [
+              { jumlah: "200 Likes", harga: "Rp 7.000" },
+              { jumlah: "500 Likes", harga: "Rp 18.000" },
+              { jumlah: "800 Likes", harga: "Rp 28.000" },
+              { jumlah: "1.000 Likes", harga: "Rp 35.000" },
+              { jumlah: "1.500 Likes", harga: "Rp 53.000" },
+              { jumlah: "2.000 Likes", harga: "Rp 70.000" },
+              { jumlah: "3.000 Likes", harga: "Rp 105.000" },
+              { jumlah: "4.000 Likes", harga: "Rp 140.000" },
+              { jumlah: "5.000 Likes", harga: "Rp 175.000" },
+              { jumlah: "6.000 Likes", harga: "Rp 210.000" },
+              { jumlah: "7.000 Likes", harga: "Rp 245.000" },
+              { jumlah: "8.000 Likes", harga: "Rp 280.000" },
+              { jumlah: "9.000 Likes", harga: "Rp 315.000" },
+              { jumlah: "10.000 Likes", harga: "Rp 350.000" },
+            ],
+            "Views Video": [
+              { jumlah: "500 Views", harga: "Rp 8.000" },
+              { jumlah: "1.000 Views", harga: "Rp 15.000" },
+              { jumlah: "1.500 Views", harga: "Rp 23.000" },
+              { jumlah: "2.000 Views", harga: "Rp 30.000" },
+              { jumlah: "2.500 Views", harga: "Rp 38.000" },
+              { jumlah: "3.000 Views", harga: "Rp 46.000" },
+              { jumlah: "4.000 Views", harga: "Rp 61.000" },
+              { jumlah: "5.000 Views", harga: "Rp 76.000" },
+              { jumlah: "6.000 Views", harga: "Rp 91.000" },
+              { jumlah: "7.000 Views", harga: "Rp 106.000" },
+              { jumlah: "8.000 Views", harga: "Rp 121.000" },
+              { jumlah: "9.000 Views", harga: "Rp 136.000" },
+              { jumlah: "10.000 Views", harga: "Rp 152.000" },
+            ],
+            "Komen Post": [
+              { jumlah: "15 Komen", harga: "Rp 10.000" },
+              { jumlah: "30 Komen", harga: "Rp 20.000" },
+              { jumlah: "50 Komen", harga: "Rp 34.000" },
+              { jumlah: "70 Komen", harga: "Rp 47.000" },
+              { jumlah: "90 Komen", harga: "Rp 60.000" },
+            ],
+          }
+        },
+        others: {
+          nama: "Others Services", emoji: "✨",
+          layanan: {
+            "Netflix Premium": [
+              { jumlah: "Akun Premium – Sharing – 1 Bulan", harga: "Rp 35.000" },
+            ],
+            "Spotify Premium": [
+              { jumlah: "Akun Premium – Private – 1 Bulan", harga: "Rp 30.000" },
+            ],
+            "CapCut Pro": [
+              { jumlah: "Akun Pro – Private – 1 Bulan", harga: "Rp 25.000" },
+            ],
+            "Canva Premium": [
+              { jumlah: "Fitur Premium – Join Tim – 1 Bulan", harga: "Rp 15.000" },
+            ],
+            "SnackVideo Followers": [
+              { jumlah: "200 Followers", harga: "Rp 6.000" },
+              { jumlah: "500 Followers", harga: "Rp 15.000" },
+              { jumlah: "800 Followers", harga: "Rp 24.000" },
+              { jumlah: "1000 Followers", harga: "Rp 30.000" },
+              { jumlah: "2000 Followers", harga: "Rp 60.000" },
+            ],
+            "Shopee Followers": [
+              { jumlah: "200 Followers", harga: "Rp 6.000" },
+              { jumlah: "500 Followers", harga: "Rp 15.000" },
+              { jumlah: "800 Followers", harga: "Rp 24.000" },
+              { jumlah: "1000 Followers", harga: "Rp 30.000" },
+              { jumlah: "2000 Followers", harga: "Rp 60.000" },
+            ],
+          }
+        }
+      };
+
+      // ============================================================
+      // STATE
+      // ============================================================
+      let platformAktif = '';
+
+      // ============================================================
+      // BUKA MODAL
+      // ============================================================
+      function bukaModal(platform) {
+        platformAktif = platform;
+        const data = dataLayanan[platform];
+
+        document.getElementById('orderModalTitle').textContent = `${data.emoji} ${data.nama}`;
+
+        // Isi dropdown JENIS layanan
+        const selLayanan = document.getElementById('selectLayanan');
+        selLayanan.innerHTML = '<option value="">-- Pilih Layanan --</option>';
+        Object.keys(data.layanan).forEach(jenis => {
+          const opt = document.createElement('option');
+          opt.value = jenis;
+          opt.textContent = jenis;
+          selLayanan.appendChild(opt);
+        });
+
+        // Reset dropdown jumlah
+        const selJumlah = document.getElementById('selectJumlah');
+        selJumlah.innerHTML = '<option value="">-- Pilih Jumlah --</option>';
+        selJumlah.disabled = true;
+
+        // Reset field lain
+        document.getElementById('inputLink').value = '';
+        document.getElementById('hargaInfo').classList.remove('show');
+
+        // Hint link
+        const linkRow = document.getElementById('inputLink').closest('.mb-3');
+        if (platform === 'others') {
+          linkRow.querySelector('small').textContent = 'Kosongkan jika tidak diperlukan (untuk Netflix, Spotify, dll)';
+        } else {
+          linkRow.querySelector('small').textContent = 'Masukkan link akun atau postingan yang ingin di-boost';
+        }
+
+        const modal = new bootstrap.Modal(document.getElementById('orderModal'));
+        modal.show();
+      }
+
+      // ============================================================
+      // UPDATE DROPDOWN JUMLAH SAAT JENIS LAYANAN DIPILIH
+      // ============================================================
+      function updateJumlah() {
+        const jenis = document.getElementById('selectLayanan').value;
+        const selJumlah = document.getElementById('selectJumlah');
+        document.getElementById('hargaInfo').classList.remove('show');
+
+        if (!jenis) {
+          selJumlah.innerHTML = '<option value="">-- Pilih Jumlah --</option>';
+          selJumlah.disabled = true;
+          return;
+        }
+
+        const opsi = dataLayanan[platformAktif].layanan[jenis];
+        selJumlah.innerHTML = '<option value="">-- Pilih Jumlah --</option>';
+        opsi.forEach((item, idx) => {
+          const opt = document.createElement('option');
+          opt.value = idx;
+          opt.textContent = item.jumlah;
+          selJumlah.appendChild(opt);
+        });
+        selJumlah.disabled = false;
+      }
+
+      // ============================================================
+      // UPDATE HARGA SAAT JUMLAH DIPILIH
+      // ============================================================
+      function updateHarga() {
+        const jenis = document.getElementById('selectLayanan').value;
+        const idx = document.getElementById('selectJumlah').value;
+        const hargaInfo = document.getElementById('hargaInfo');
+
+        if (!jenis || idx === '') {
+          hargaInfo.classList.remove('show');
+          return;
+        }
+
+        const harga = dataLayanan[platformAktif].layanan[jenis][idx].harga;
+        document.getElementById('hargaText').textContent = harga;
+        hargaInfo.classList.add('show');
+      }
+
+      // ============================================================
+      // KIRIM KE WHATSAPP
+      // ============================================================
+      function kirimWA() {
+        const jenis = document.getElementById('selectLayanan').value;
+        const idx = document.getElementById('selectJumlah').value;
+        const link = document.getElementById('inputLink').value.trim();
+
+        if (!jenis) { alert('Silakan pilih layanan terlebih dahulu!'); return; }
+        if (idx === '') { alert('Silakan pilih jumlah pesanan!'); return; }
+        if (platformAktif !== 'others' && !link) { alert('Mohon masukkan link / URL target!'); return; }
+
+        const platform = dataLayanan[platformAktif];
+        const item = platform.layanan[jenis][idx];
+
+        const tglNow = new Date().toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' });
+        let pesan = `╔══════════════════════╗\n`;
+        pesan += `   🛒 *FORM PEMESANAN*\n`;
+        pesan += `   *Nura Digistore*\n`;
+        pesan += `   mysosmedcoid.github.io/site\n`;
+        pesan += `╚══════════════════════╝\n\n`;
+        pesan += `📅 *Tanggal:* ${tglNow}\n`;
+        pesan += `━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+        pesan += `${platform.emoji} *Platform:* ${platform.nama}\n`;
+        pesan += `📦 *Layanan:* ${jenis}\n`;
+        pesan += `🔢 *Jumlah:* ${item.jumlah}\n`;
+        pesan += `💰 *Harga:* ${item.harga}\n`;
+        if (link) pesan += `🔗 *Link Target:* ${link}\n`;
+        pesan += `━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+        pesan += `Mohon diproses, terimakasih! 🙏`;
+
+        const url = `https://wa.me/6285172190182?text=${encodeURIComponent(pesan)}`;
+        window.open(url, '_blank');
+      }
+
+      // ============================================================
+      // SCRIPT ZOOM GALERI
+      // ============================================================
       document.addEventListener("DOMContentLoaded", function () {
         const images = document.querySelectorAll(".gallery-img");
         const modalImage = document.getElementById("modalImage");
         const imageModalElement = document.getElementById("imageModal");
         const imageModal = new bootstrap.Modal(imageModalElement);
 
-        // Klik gambar di galeri → tampilkan modal
         images.forEach(img => {
           img.addEventListener("click", function () {
             modalImage.src = this.src;
@@ -323,7 +923,6 @@
           });
         });
 
-        // Klik gambar di dalam modal → tutup modal
         modalImage.addEventListener("click", function () {
           imageModal.hide();
         });
